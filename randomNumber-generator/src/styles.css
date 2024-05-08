@@ -68,13 +68,13 @@ button:hover{
     text-shadow: 2px 2px #a356bf;
 }
 
-@media (max-width: 890px){
+@media (max-width: 992px){
     .numberShown{        
         flex-direction: column;        
     } 
 }
 
-@media (min-width:1869px){
+@media (min-width: 1200px){
     .main, .container2{
         max-width: 1500px;
     }
