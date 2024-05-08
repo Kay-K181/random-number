@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "roboto", sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, #f5af84, #b56736) no-repeat;
+    height: 100vh;
+}
+
+.main, .container2{
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.formContainer{
+    margin-top: 20px;
+}
+
+label{
+    font-size: 1.6rem;    
+}
+
+input{
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 1.6rem;
+}
+
+button{
+    font-size: 1.4rem;
+    padding: 4px 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+    cursor: pointer;
+    background-color: white;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+.input1{
+    display: block;
+    margin: 60px 0 15px 0;
+}
+
+.btn{
+    margin-right: 10px;
+}
+
+.numberShown{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #350a45;
+    text-shadow: 2px 2px #a356bf;
+}
+
+@media (max-width: 890px){
+    .numberShown{        
+        flex-direction: column;        
+    } 
+}
+
+@media (min-width:1869px){
+    .main, .container2{
+        max-width: 1500px;
+    }
+
+    .title{
+        font-size: 5rem;        
+    }      
+    
+    label, input{
+        font-size: 3rem;    
+    }
+    
+    button{
+        font-size: 2.6rem;       
+    }
+           
+    .numberShown{
+        font-size: 4rem;       
+    }
+}

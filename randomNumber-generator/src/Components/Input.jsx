@@ -11,12 +11,12 @@ export default function Input({value, setValue, setPage}){
     }
 
     return (
-        <div>
-            <div>How many numbers would you like to generate between 1 and 20?</div>
-            <form >
-                <label htmlFor="">
+        <div className="main">
+            <div className="title">How many numbers would you like to generate between 1 and 20?</div>
+            <form className="formContainer">
+                <label>
                     Please enter here:
-                    <input 
+                    <input                        
                         type="number" 
                         value={value}
                         onChange={(e) => setValue(parseInt(e.target.value))}
