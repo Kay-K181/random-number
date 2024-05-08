@@ -19,7 +19,10 @@ export default function RandomGen({value, setPage}){
         const max = parseInt(data.maximum);
 
         if(min > max){
-            alert('The minimum value cannot be greater than the maximum value')
+            alert('The minimum value cannot be greater than the maximum value');
+            return;
+        } else if (max > 500){
+            alert('The maximum value cannot be greater than 500')
         } else {
             return Math.floor(Math.random() * (max - min + 1) ) + min;            
         }
@@ -30,7 +33,12 @@ export default function RandomGen({value, setPage}){
         const numbers = [];
 
         for(let i = 0; i < value; i++){
-            numbers.push(repeat())
+            const randomNumber = repeat();
+            if (randomNumber !== undefined) {
+                numbers.push(randomNumber);
+            } else {
+                break; 
+            }
         }
         setNumberShown(numbers)        
     }
