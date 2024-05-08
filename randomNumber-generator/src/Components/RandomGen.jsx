@@ -36,12 +36,12 @@ export default function RandomGen({value, setPage}){
     }
 
     return (
-        <div>
-        <div>{numberShown.map((num, index) => (<div key={index}>{num}</div>))}</div>
+        <div className="container2">
+        <div className="numberShown">{numberShown.map((num, index) => (<div key={index}>{num}</div>))}</div>
         <form >
-            <label htmlFor="">
+            <label className="input1">
                 Minimum value here:
-                <input 
+                <input
                     type="number"
                     name="minimum"
                     value={data.minimum}
@@ -58,7 +58,7 @@ export default function RandomGen({value, setPage}){
                 />
             </label>
         </form>
-        <button onClick={random}>Generate random number</button>
+        <button className="btn" onClick={random}>Generate random number</button>
         <button onClick={() => {setPage('')}}>Go to the beginning</button>
         </div>
     )
